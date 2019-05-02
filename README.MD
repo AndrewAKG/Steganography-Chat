@@ -1,4 +1,4 @@
-# The project is divided into 2 projects, one is for the Database server and other for the chat application along with the security features.
+# The project is divided into 2 projects, one is for the Database server and other for the chat application along with the security features:-
 
 # to run the project:-
 
