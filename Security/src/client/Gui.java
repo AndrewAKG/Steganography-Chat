@@ -26,6 +26,7 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JPasswordField;
 import javax.swing.JScrollPane;
 import javax.swing.JTextArea;
 import javax.swing.JTextPane;
@@ -50,7 +51,7 @@ public class Gui extends JFrame implements ActionListener, Runnable {
 	static JLabel Confirm;
 	static JTextArea userNameSignUpText;
 	static JLabel passwordSignUp;
-	static JTextArea passwordSignUpText;
+	static JPasswordField passwordSignUpText;
 	static JButton signUpButton;
 	static JLabel signUpResult;
 
@@ -58,7 +59,7 @@ public class Gui extends JFrame implements ActionListener, Runnable {
 	static JLabel userNameLogIn;
 	static JTextArea userNameLogInText;
 	static JLabel passwordLogIn;
-	static JTextArea passwordLogInText;
+	static JPasswordField passwordLogInText;
 	static JButton logInButton;
 	static JLabel logInResult;
 
@@ -123,9 +124,10 @@ public class Gui extends JFrame implements ActionListener, Runnable {
 		userNameSignUpText.setFont(f2);
 		add(userNameSignUpText);
 
-		passwordSignUpText = new JTextArea();
+		passwordSignUpText = new JPasswordField();
 		passwordSignUpText.setBounds(200, 240, 200, 40);
 		passwordSignUpText.setFont(f2);
+		passwordSignUpText.setEchoChar('*');
 		add(passwordSignUpText);
 
 		signUpButton = new JButton("Sign Up");
@@ -161,9 +163,10 @@ public class Gui extends JFrame implements ActionListener, Runnable {
 		userNameLogInText.setFont(f2);
 		add(userNameLogInText);
 
-		passwordLogInText = new JTextArea();
+		passwordLogInText = new JPasswordField();
 		passwordLogInText.setBounds(800, 240, 200, 40);
 		passwordLogInText.setFont(f2);
+		passwordLogInText.setEchoChar('*');
 		add(passwordLogInText);
 
 		logInButton = new JButton("Log In");
